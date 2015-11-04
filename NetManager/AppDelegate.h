@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+#define DBKVTableName  @"KVCacheTable"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

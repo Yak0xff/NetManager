@@ -7,16 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "NetManager-Swift.h"
+#import "YTKKeyValueStore.h"
 
 @interface AppDelegate ()
 
 @end
+
+
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [YTKKeyValueStore sharedYTK];
+    if (![[YTKKeyValueStore sharedYTK] isTableExists:DBKVTableName]) {
+        [[YTKKeyValueStore sharedYTK] createTableWithName:DBKVTableName];
+    }
+    
     return YES;
 }
 
