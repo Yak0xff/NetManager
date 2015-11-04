@@ -24,7 +24,6 @@
 		00F619881BE9FF2C001FBAB0 /* EasyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F619671BE9FF2C001FBAB0 /* EasyRequest.swift */; };
 		00F619891BE9FF2C001FBAB0 /* EasyUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F619681BE9FF2C001FBAB0 /* EasyUpload.swift */; };
 		00F6198A1BE9FF2C001FBAB0 /* EasyUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F619691BE9FF2C001FBAB0 /* EasyUtil.swift */; };
-		00F6198B1BE9FF2C001FBAB0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6196A1BE9FF2C001FBAB0 /* APIManager.swift */; };
 		00F6198C1BE9FF2C001FBAB0 /* CommonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6196B1BE9FF2C001FBAB0 /* CommonRequest.swift */; };
 		00F6198D1BE9FF2C001FBAB0 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F6196E1BE9FF2C001FBAB0 /* error@2x.png */; };
 		00F6198E1BE9FF2C001FBAB0 /* error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F6196F1BE9FF2C001FBAB0 /* error@3x.png */; };
@@ -37,6 +36,9 @@
 		00F619951BE9FF2C001FBAB0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6197E1BE9FF2C001FBAB0 /* FMDatabaseQueue.m */; };
 		00F619961BE9FF2C001FBAB0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F619811BE9FF2C001FBAB0 /* FMResultSet.m */; };
 		00F619971BE9FF2C001FBAB0 /* YTKKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F619831BE9FF2C001FBAB0 /* YTKKeyValueStore.m */; };
+		00F6199B1BEA013E001FBAB0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F619991BEA013E001FBAB0 /* APIManager.swift */; };
+		00F6199F1BEA0305001FBAB0 /* EvoRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6199E1BEA0305001FBAB0 /* EvoRuntime.m */; };
+		00F619A21BEA1365001FBAB0 /* NSObject+Evo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F619A11BEA1365001FBAB0 /* NSObject+Evo.m */; };
 		4AAE5EB9A3F4A429CBBCF377 /* Pods_NetManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A6733630CEA2F40D171486 /* Pods_NetManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +65,6 @@
 		00F619671BE9FF2C001FBAB0 /* EasyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyRequest.swift; sourceTree = "<group>"; };
 		00F619681BE9FF2C001FBAB0 /* EasyUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyUpload.swift; sourceTree = "<group>"; };
 		00F619691BE9FF2C001FBAB0 /* EasyUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyUtil.swift; sourceTree = "<group>"; };
-		00F6196A1BE9FF2C001FBAB0 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		00F6196B1BE9FF2C001FBAB0 /* CommonRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonRequest.swift; sourceTree = "<group>"; };
 		00F6196E1BE9FF2C001FBAB0 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
 		00F6196F1BE9FF2C001FBAB0 /* error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@3x.png"; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		00F619711BE9FF2C001FBAB0 /* success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
 		00F619721BE9FF2C001FBAB0 /* MessageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTool.h; sourceTree = "<group>"; };
 		00F619731BE9FF2C001FBAB0 /* MessageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTool.m; sourceTree = "<group>"; };
-		00F619741BE9FF2C001FBAB0 /* NetManager-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetManager-Bridging-Header.h"; sourceTree = "<group>"; };
 		00F619771BE9FF2C001FBAB0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		00F619781BE9FF2C001FBAB0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		00F619791BE9FF2C001FBAB0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -85,6 +85,12 @@
 		00F619811BE9FF2C001FBAB0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		00F619821BE9FF2C001FBAB0 /* YTKKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKKeyValueStore.h; sourceTree = "<group>"; };
 		00F619831BE9FF2C001FBAB0 /* YTKKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStore.m; sourceTree = "<group>"; };
+		00F619991BEA013E001FBAB0 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		00F6199A1BEA013E001FBAB0 /* NetManager-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		00F6199D1BEA0305001FBAB0 /* EvoRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvoRuntime.h; sourceTree = "<group>"; };
+		00F6199E1BEA0305001FBAB0 /* EvoRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvoRuntime.m; sourceTree = "<group>"; };
+		00F619A01BEA1365001FBAB0 /* NSObject+Evo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Evo.h"; sourceTree = "<group>"; };
+		00F619A11BEA1365001FBAB0 /* NSObject+Evo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Evo.m"; sourceTree = "<group>"; };
 		A32AAECFB62E74B7D74F076A /* Pods-NetManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetManager/Pods-NetManager.debug.xcconfig"; sourceTree = "<group>"; };
 		C2A6733630CEA2F40D171486 /* Pods_NetManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41F4FAD3592EA1E955D7475 /* Pods-NetManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetManager/Pods-NetManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 		0038BEA51BE8BA6F002C8ED6 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				00F6199C1BEA0156001FBAB0 /* APPCommon */,
 				0038BEA91BE8BA6F002C8ED6 /* AppDelegate.h */,
 				0038BEAA1BE8BA6F002C8ED6 /* AppDelegate.m */,
 				0038BEAC1BE8BA6F002C8ED6 /* ViewController.h */,
@@ -165,10 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				00F619621BE9FF2C001FBAB0 /* ApiKit */,
-				00F6196A1BE9FF2C001FBAB0 /* APIManager.swift */,
 				00F6196B1BE9FF2C001FBAB0 /* CommonRequest.swift */,
 				00F6196C1BE9FF2C001FBAB0 /* MessageTool */,
-				00F619741BE9FF2C001FBAB0 /* NetManager-Bridging-Header.h */,
 				00F619751BE9FF2C001FBAB0 /* YTKKeyValueStore */,
 			);
 			path = NetManager;
@@ -240,8 +245,21 @@
 		00F619981BE9FFAC001FBAB0 /* Evo */ = {
 			isa = PBXGroup;
 			children = (
+				00F6199D1BEA0305001FBAB0 /* EvoRuntime.h */,
+				00F6199E1BEA0305001FBAB0 /* EvoRuntime.m */,
+				00F619A01BEA1365001FBAB0 /* NSObject+Evo.h */,
+				00F619A11BEA1365001FBAB0 /* NSObject+Evo.m */,
 			);
 			path = Evo;
+			sourceTree = "<group>";
+		};
+		00F6199C1BEA0156001FBAB0 /* APPCommon */ = {
+			isa = PBXGroup;
+			children = (
+				00F619991BEA013E001FBAB0 /* APIManager.swift */,
+				00F6199A1BEA013E001FBAB0 /* NetManager-Bridging-Header.h */,
+			);
+			name = APPCommon;
 			sourceTree = "<group>";
 		};
 		2AFAE9EC8987AEF890A3B49C /* Frameworks */ = {
@@ -388,7 +406,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F6198B1BE9FF2C001FBAB0 /* APIManager.swift in Sources */,
 				00F619911BE9FF2C001FBAB0 /* MessageTool.m in Sources */,
 				00F619891BE9FF2C001FBAB0 /* EasyUpload.swift in Sources */,
 				00F619921BE9FF2C001FBAB0 /* FMDatabase.m in Sources */,
@@ -401,11 +418,14 @@
 				00F619871BE9FF2C001FBAB0 /* EasyLoad.swift in Sources */,
 				00F619851BE9FF2C001FBAB0 /* EasyDB.swift in Sources */,
 				00F6198C1BE9FF2C001FBAB0 /* CommonRequest.swift in Sources */,
+				00F6199B1BEA013E001FBAB0 /* APIManager.swift in Sources */,
 				0038BEAB1BE8BA6F002C8ED6 /* AppDelegate.m in Sources */,
 				0038BEA81BE8BA6F002C8ED6 /* main.m in Sources */,
 				00F6198A1BE9FF2C001FBAB0 /* EasyUtil.swift in Sources */,
 				00F619881BE9FF2C001FBAB0 /* EasyRequest.swift in Sources */,
 				00F619861BE9FF2C001FBAB0 /* EasyDownload.swift in Sources */,
+				00F619A21BEA1365001FBAB0 /* NSObject+Evo.m in Sources */,
+				00F6199F1BEA0305001FBAB0 /* EvoRuntime.m in Sources */,
 				00F619941BE9FF2C001FBAB0 /* FMDatabasePool.m in Sources */,
 				00F619951BE9FF2C001FBAB0 /* FMDatabaseQueue.m in Sources */,
 			);
@@ -525,7 +545,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrocker.NetManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Robin/Documents/WorkCopy/NetManager/NetManager/MagicKit/NetManager/NetManager-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Robin/Documents/WorkCopy/NetManager/NetManager/NetManager-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -539,7 +559,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrocker.NetManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Robin/Documents/WorkCopy/NetManager/NetManager/MagicKit/NetManager/NetManager-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Robin/Documents/WorkCopy/NetManager/NetManager/NetManager-Bridging-Header.h";
 			};
 			name = Release;
 		};
