@@ -3,7 +3,26 @@
 #import "UserModel.h"
 #import "NetManager-Swift.h"
 
+#import "NSObject+Evo.h"
+
 @implementation UserModel
+
+
++ (NSDictionary *)modelPropertyMapper{
+    return @{
+             @"userId" : @"id",
+             @"userName" : @"name"
+             };
+}
+
+
+- (void)encodeWithCoder:(NSCoder *)aCoder{
+    [self modelEncodeWithCoder:aCoder];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    return [self modelInitWithCoder:aDecoder];
+}
 
 
 + (void)loginWithMobile:(NSString *)mobile
@@ -17,7 +36,8 @@
         if (statusCode != 200) {
             failure(nil);
         }else{
-            success(responseObject,nil);
+            UserModel *user = [UserModel modelFromJSON:responseObject];
+            success(user,nil);
         }
     }];
 }
@@ -32,7 +52,8 @@
         if (statusCode != 200) {
             failure(nil);
         }else{
-            success(statusCode,responseObject);
+            UserModel *user = [UserModel modelFromJSON:responseObject];
+            success(statusCode,user);
         }
     }];
 }

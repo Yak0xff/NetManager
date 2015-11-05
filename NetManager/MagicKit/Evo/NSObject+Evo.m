@@ -1334,7 +1334,7 @@ static id ModelToJSONObjectRecursive(NSObject *model) {
     return self;
 }
 
-- (NSUInteger)hash {
+- (NSUInteger)evoHash {
     if (self == (id)kCFNull) return [self hash];
     _EvoModelMeta *modelMeta = [_EvoModelMeta metaWithClass:self.class];
     if (modelMeta->_nsType) return [self hash];
@@ -1350,7 +1350,7 @@ static id ModelToJSONObjectRecursive(NSObject *model) {
     return value;
 }
 
-- (BOOL)IsEqualToModel:(id)model {
+- (BOOL)isEqualToModel:(id)model {
     if (self == model) return YES;
     if (![model isMemberOfClass:self.class]) return NO;
     _EvoModelMeta *modelMeta = [_EvoModelMeta metaWithClass:self.class];
