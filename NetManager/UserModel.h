@@ -3,7 +3,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface UserModel : NSObject
+@interface UserModel : NSObject<NSCoding>
+
+@property (nonatomic, strong) NSString *userId;
+@property (nonatomic, strong) NSString *userName;
+@property (nonatomic, strong) NSString *sign;
 
 
 + (void)loginWithMobile:(NSString *)mobile

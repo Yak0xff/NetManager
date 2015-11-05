@@ -36,13 +36,15 @@
 
 - (id)modelCopy;
 
+// 序列化使用
 - (void)modelEncodeWithCoder:(NSCoder *)aCoder;
 - (id)modelInitWithCoder:(NSCoder *)aDecoder;
 
-- (NSUInteger)hash;
+// Object  hash编码
+- (NSUInteger)evoHash;
 
 // model判断是否相同
-- (BOOL)IsEqualToModel:(id)model;
+- (BOOL)isEqualToModel:(id)model;
 
 
 @end
@@ -51,6 +53,14 @@
 
 @interface NSArray (Evo)
 
+/**
+ *  JSON 转为model数组
+ *
+ *  @param cls  model类
+ *  @param json 接送
+ *
+ *  @return model数组
+ */
 + (NSArray *)modelArrayWithClass:(Class)cls json:(id)json;
 
 @end
@@ -58,7 +68,14 @@
 
 
 @interface NSDictionary (Evo)
-
+/**
+ *  JSON 转为字典
+ *
+ *  @param cls  model类
+ *  @param json 接送
+ *
+ *  @return model字典
+ */
 + (NSDictionary *)modelDictionaryWithClass:(Class)cls json:(id)json;
 
 @end
@@ -68,10 +85,9 @@
 @optional
 
 /**
- Custom property mapper.
+ 自定义属性对应字典
  
- @discussion If the key in JSON/Dictionary does not match to the model's property name,
- implements this method and returns the additional mapper.
+ @discussion 如果model类中定义的属性和json返回数据中的属性不一致，需要重写此方法来指定对应关系，否则可以不重写
  
  Example:
  
@@ -104,11 +120,9 @@
 + (NSDictionary *)modelPropertyMapper;
 
 /**
- The generic class mapper for container properties.
+    如果model类中包含有集合类型的属性，需要重写此方法，指定集合类型中的数据类型和json数据中属性的对应关系，否则不重写
  
- @discussion If the property is a container object, such as NSArray/NSSet/NSDictionary,
- implements this method and returns a property->class mapper, tells which kind of
- object will be add to the array/set/dictionary.
+ @discussion 当model中的集合类型中不包含其他model的时候，不能重写此方法
  
  Example:
  @class YYShadow, YYBorder, YYAttachment;
@@ -133,25 +147,21 @@
 + (NSDictionary *)modelContainerPropertyGenericClass;
 
 /**
- All the properties in blacklist will be ignored in model transform process.
- Returns nil to ignore this feature.
+当需要忽略json中的某些字段的时候，可以重写此方法，将需要忽略的字段加入黑名单中
  
  @return An array of property's name (Array<NSString>).
  */
 + (NSArray *)modelPropertyBlacklist;
 
 /**
- If a property is not in the whitelist, it will be ignored in model transform process.
- Returns nil to ignore this feature.
+对应黑名单，这里是白名单
  
  @return An array of property's name (Array<NSString>).
  */
 + (NSArray *)modelPropertyWhitelist;
 
 /**
- If the default json-to-model transform does not fit to your model object, implement
- this method to do additional process. You can also use this method to validate the
- model's properties.
+如果model中的某些属性和json中的数据类型不一致的时候，需要重写此方法，进行类型转换，例如： NSNumber  ->  NSDate
  
  @discussion If the model implements this method, it will be called at the end of
  `+modelWithJSON:`, `+modelWithDictionary:`, `-modelSetWithJSON:` and `-modelSetWithDictionary:`.
@@ -164,9 +174,7 @@
 - (BOOL)modelTransformFromDictionary:(NSDictionary *)dic;
 
 /**
- If the default model-to-json transform does not fit to your model class, implement
- this method to do additional process. You can also use this method to validate the
- json dictionary.
+和modelTransformFromDictionary方法相反
  
  @discussion If the model implements this method, it will be called at the end of
  `-modelToJSONObject` and `-modelToJSONString`.
