@@ -80,6 +80,7 @@
             window = _window;
         }
     }
+    
     return window;
 }
 

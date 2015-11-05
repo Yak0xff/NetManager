@@ -13,6 +13,7 @@
 		0038BEB11BE8BA6F002C8ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0038BEAF1BE8BA6F002C8ED6 /* Main.storyboard */; };
 		0038BEB31BE8BA6F002C8ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0038BEB21BE8BA6F002C8ED6 /* Assets.xcassets */; };
 		0038BEB61BE8BA6F002C8ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0038BEB41BE8BA6F002C8ED6 /* LaunchScreen.storyboard */; };
+		003F91C01BEB07650043AA21 /* KVStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 003F91BF1BEB07650043AA21 /* KVStore.m */; };
 		00F6192D1BE9B2B1001FBAB0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F6192C1BE9B2B1001FBAB0 /* libsqlite3.0.tbd */; };
 		00F619401BE9B479001FBAB0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F6193F1BE9B479001FBAB0 /* Security.framework */; };
 		00F619531BE9B84D001FBAB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F619521BE9B84D001FBAB0 /* Foundation.framework */; };
@@ -53,6 +54,8 @@
 		0038BEB21BE8BA6F002C8ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0038BEB51BE8BA6F002C8ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0038BEB71BE8BA6F002C8ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003F91BE1BEB07650043AA21 /* KVStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVStore.h; sourceTree = "<group>"; };
+		003F91BF1BEB07650043AA21 /* KVStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVStore.m; sourceTree = "<group>"; };
 		00F6192C1BE9B2B1001FBAB0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		00F6193F1BE9B479001FBAB0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		00F619521BE9B84D001FBAB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,9 +161,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		003F91BD1BEB07550043AA21 /* KVStore */ = {
+			isa = PBXGroup;
+			children = (
+				003F91BE1BEB07650043AA21 /* KVStore.h */,
+				003F91BF1BEB07650043AA21 /* KVStore.m */,
+			);
+			path = KVStore;
+			sourceTree = "<group>";
+		};
 		00F619601BE9FF2C001FBAB0 /* MagicKit */ = {
 			isa = PBXGroup;
 			children = (
+				003F91BD1BEB07550043AA21 /* KVStore */,
 				00F619981BE9FFAC001FBAB0 /* Evo */,
 				00F619611BE9FF2C001FBAB0 /* NetManager */,
 			);
@@ -428,6 +441,7 @@
 				00F6199F1BEA0305001FBAB0 /* EvoRuntime.m in Sources */,
 				00F619941BE9FF2C001FBAB0 /* FMDatabasePool.m in Sources */,
 				00F619951BE9FF2C001FBAB0 /* FMDatabaseQueue.m in Sources */,
+				003F91C01BEB07650043AA21 /* KVStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
