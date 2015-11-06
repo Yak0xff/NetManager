@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002D4E1F1BEC6640005D082B /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = 002D4E1E1BEC6640005D082B /* json.json */; };
 		0038BEA81BE8BA6F002C8ED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038BEA71BE8BA6F002C8ED6 /* main.m */; };
 		0038BEAB1BE8BA6F002C8ED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038BEAA1BE8BA6F002C8ED6 /* AppDelegate.m */; };
 		0038BEAE1BE8BA6F002C8ED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038BEAD1BE8BA6F002C8ED6 /* ViewController.m */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002D4E1E1BEC6640005D082B /* json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
 		0038BEA31BE8BA6F002C8ED6 /* NetManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0038BEA71BE8BA6F002C8ED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0038BEA91BE8BA6F002C8ED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				0038BEAD1BE8BA6F002C8ED6 /* ViewController.m */,
 				00F6195B1BE9D497001FBAB0 /* UserModel.h */,
 				00F6195C1BE9D497001FBAB0 /* UserModel.m */,
+				002D4E1E1BEC6640005D082B /* json.json */,
 				0038BEAF1BE8BA6F002C8ED6 /* Main.storyboard */,
 				0038BEB21BE8BA6F002C8ED6 /* Assets.xcassets */,
 				0038BEB41BE8BA6F002C8ED6 /* LaunchScreen.storyboard */,
@@ -358,6 +361,7 @@
 				00F619901BE9FF2C001FBAB0 /* success@3x.png in Resources */,
 				00F6198E1BE9FF2C001FBAB0 /* error@3x.png in Resources */,
 				00F6198F1BE9FF2C001FBAB0 /* success@2x.png in Resources */,
+				002D4E1F1BEC6640005D082B /* json.json in Resources */,
 				0038BEB31BE8BA6F002C8ED6 /* Assets.xcassets in Resources */,
 				0038BEB11BE8BA6F002C8ED6 /* Main.storyboard in Resources */,
 				00F6198D1BE9FF2C001FBAB0 /* error@2x.png in Resources */,

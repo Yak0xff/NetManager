@@ -39,23 +39,8 @@
     user.sign = @"How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。How to accurately avoid the unavailable time intervals of machines, ensure all jobs could process in a reasonable sequence, and meet the demand of every order, the significance of this problem is both in theory and practice. Firstly, according to the attribute of these unavailable time intervals, this paper divides the intervals into two kinds, deterministic and stochastic.如何及时准确的规避那些设备不可用的时间间隔，保障各工件加工的合理有序进行，从而可以更好的指导生产，满足各订单的要求。对这样问题的研究有着重要的理论和实践意义。首先，本文对所要研究的不可用时间间隔按其各自属性，将它们分为确定型时间间隔和随机型时间间隔。";
     
     
-    
-    NSTimeInterval begin, end, time;
-    begin = CACurrentMediaTime();
-     
-    printf("Begin:   %8.2f\n", time * 1000);
-    
-    @autoreleasepool {
-        for (int i = 0; i < 300000; i++) {
+    [self.store saveItemWithKey:user.userId value:[user toJSONData]];
             
-            [self.store saveItemWithKey:user.userId value:[user toJSONData]];
-            
-        }
-    }
-    
-    end = CACurrentMediaTime();
-    time = end - begin;
-    printf("finished:   %8.2f\n", time * 1000);
     
 }
 
@@ -63,7 +48,7 @@
 - (IBAction)post:(id)sender {
     
     [UserModel loginWithMobile:@"18618321894" password:@"pppppp" superView:self.view success:^(UserModel *user, NSError *error) {
-        NSLog(@"id: %@ \n  name: %@ \n sign: %@\n",user.userId,user.userName,user.sign);
+        NSLog(@"id: %@ \n  name: %@ \n sign: %@\n   fits: %@",user.userId,user.userName,user.sign,user.fits);
         [self saveUser:user];
     } failure:^(NSError *error) {
         NSLog(@"login error :  %@",error.debugDescription);

@@ -12,10 +12,13 @@
       <sourceFolder url="file://$MODULE_DIR$/NetManager/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/json.json" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/EvoRuntime.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/EvoRuntime.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/NSObject+Evo.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/NSObject+Evo.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/KVStore/KVStore.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/KVStore/KVStore.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyBuilder.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyDB.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyDownload.swift" isTestSource="false" />

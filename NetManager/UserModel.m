@@ -23,7 +23,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder{
     return [self modelInitWithCoder:aDecoder];
 }
-
+ 
 
 + (void)loginWithMobile:(NSString *)mobile
                password:(NSString *)password
@@ -36,7 +36,16 @@
         if (statusCode != 200) {
             failure(nil);
         }else{
-            UserModel *user = [UserModel modelFromJSON:responseObject];
+            
+            
+            NSString *Json_path=[[NSBundle mainBundle] pathForResource:@"json" ofType:@"json"];
+            NSData *data=[NSData dataWithContentsOfFile:Json_path];
+            
+            id JsonObject=[NSJSONSerialization JSONObjectWithData:data
+                                                          options:NSJSONReadingAllowFragments
+                                                            error:nil];
+            
+            UserModel *user = [UserModel modelFromJSON:JsonObject];
             success(user,nil);
         }
     }];

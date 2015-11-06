@@ -8,6 +8,7 @@
 @property (nonatomic, strong) NSString *userId;
 @property (nonatomic, strong) NSString *userName;
 @property (nonatomic, strong) NSString *sign;
+@property (nonatomic, strong) NSArray *fits;
 
 
 + (void)loginWithMobile:(NSString *)mobile
