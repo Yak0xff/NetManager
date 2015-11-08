@@ -16,6 +16,8 @@
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/EvoRuntime.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/NSObject+Evo.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/NSObject+Evo.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/KVStore/KVStore.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/KVStore/KVStore.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyBuilder.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyDB.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyDownload.swift" isTestSource="false" />
@@ -24,12 +26,14 @@
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyUpload.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyUtil.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/CommonRequest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/HUD.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/Images/error@2x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/Images/error@3x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/Images/success@2x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/Images/success@3x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/MessageTool.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/MessageTool.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDB.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabase.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabase.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabaseAdditions.h" isTestSource="false" />
@@ -38,17 +42,16 @@
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabasePool.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabaseQueue.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabaseQueue.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDB.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMResultSet.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMResultSet.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/YTKKeyValueStore.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/YTKKeyValueStore.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/NetManager/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/NetManager-Bridging-Header.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/UserModel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/UserModel.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/ViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />

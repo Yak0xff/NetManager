@@ -48,7 +48,7 @@
     func getUserInfo(userId: String, superView: UIView, callBack: (statusCode: Int, resultData: AnyObject?) -> Void) {
         let URL: String = kBaseURL + "/me/user/\(userId)"
         
-        CommonRequest.request(.GET, url: URL, params: nil, superView: superView) { (fromCache, statusCode, resultData) -> Void in
+        CommonRequest.request(.GET, url: URL, params: nil,cacheTime: 10, superView: superView) { (fromCache, statusCode, resultData) -> Void in
             callBack(statusCode: statusCode, resultData: resultData)
         }
     }

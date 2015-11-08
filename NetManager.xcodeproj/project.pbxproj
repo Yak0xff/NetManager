@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000A9A421BEF85DD0002E96B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A9A411BEF85DD0002E96B /* HUD.swift */; };
 		0038BEA81BE8BA6F002C8ED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038BEA71BE8BA6F002C8ED6 /* main.m */; };
 		0038BEAB1BE8BA6F002C8ED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038BEAA1BE8BA6F002C8ED6 /* AppDelegate.m */; };
 		0038BEAE1BE8BA6F002C8ED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038BEAD1BE8BA6F002C8ED6 /* ViewController.m */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000A9A411BEF85DD0002E96B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		0038BEA31BE8BA6F002C8ED6 /* NetManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0038BEA71BE8BA6F002C8ED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0038BEA91BE8BA6F002C8ED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				00F6196D1BE9FF2C001FBAB0 /* Images */,
 				00F619721BE9FF2C001FBAB0 /* MessageTool.h */,
 				00F619731BE9FF2C001FBAB0 /* MessageTool.m */,
+				000A9A411BEF85DD0002E96B /* HUD.swift */,
 			);
 			path = MessageTool;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				00F619A21BEA1365001FBAB0 /* NSObject+Evo.m in Sources */,
 				00F6199F1BEA0305001FBAB0 /* EvoRuntime.m in Sources */,
 				00F619941BE9FF2C001FBAB0 /* FMDatabasePool.m in Sources */,
+				000A9A421BEF85DD0002E96B /* HUD.swift in Sources */,
 				00F619951BE9FF2C001FBAB0 /* FMDatabaseQueue.m in Sources */,
 				003F91C01BEB07650043AA21 /* KVStore.m in Sources */,
 			);
@@ -559,7 +563,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrocker.NetManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Robin/Documents/WorkCopy/NetManager/NetManager/NetManager-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Robin/Documents/NetManager/NetManager/NetManager-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -573,7 +577,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrocker.NetManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Robin/Documents/WorkCopy/NetManager/NetManager/NetManager-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Robin/Documents/NetManager/NetManager/NetManager-Bridging-Header.h";
 			};
 			name = Release;
 		};

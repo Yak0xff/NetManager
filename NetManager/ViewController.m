@@ -45,13 +45,8 @@
      
     printf("Begin:   %8.2f\n", time * 1000);
     
-    @autoreleasepool {
-        for (int i = 0; i < 300000; i++) {
-            
-            [self.store saveItemWithKey:user.userId value:[user toJSONData]];
-            
-        }
-    }
+    [self.store saveItemWithKey:user.userId value:[user toJSONData]];
+
     
     end = CACurrentMediaTime();
     time = end - begin;

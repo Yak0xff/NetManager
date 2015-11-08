@@ -79,10 +79,10 @@ typedef NS_ENUM(NSUInteger, KVStoreType) {
 - (BOOL)removeItemWithKeys:(NSArray *)keys;
 
 // 当文件大小大于某个大小得时候，移除所有存储的item
-- (BOOL)removeItemsWhenLargerThanSize:(NSUInteger)size;
+- (BOOL)removeItemsWhenLargerThanSize:(int)size;
 
 // 当存储时间大于某个时间点的时候，移除给定时间点之前的所有item
-- (BOOL)removeItemsWhenEarlierThanTime:(NSUInteger)time;
+- (BOOL)removeItemsWhenEarlierThanTime:(int)time;
 
 // 当所有存储数据的大小到达指定的大小时，根据淘汰算法，移除相应的item
 - (BOOL)removeItemsToFitSize:(NSUInteger)size;
