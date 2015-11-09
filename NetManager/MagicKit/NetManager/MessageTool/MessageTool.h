@@ -1,7 +1,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "NetManager-Swfit.h"
 
 @interface MessageTool : NSObject<MBProgressHUDDelegate> {
     MBProgressHUD *showMessage;

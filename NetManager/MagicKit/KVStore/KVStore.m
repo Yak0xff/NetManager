@@ -201,6 +201,25 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
     return stmt;
 }
 
+
+- (NSString *)dbJoinedKeys:(NSArray *)keys {
+    NSMutableString *string = [NSMutableString new];
+    for (NSUInteger i = 0,max = keys.count; i < max; i++) {
+        [string appendString:@"?"];
+        if (i + 1 != max) {
+            [string appendString:@","];
+        }
+    }
+    return string;
+}
+
+- (void)dbBindJoinedKeys:(NSArray *)keys stmt:(sqlite3_stmt *)stmt fromIndex:(int)index{
+    for (int i = 0, max = (int)keys.count; i < max; i++) {
+        NSString *key = keys[i];
+        sqlite3_bind_text(stmt, index + i, key.UTF8String, -1, NULL);
+    }
+}
+
 //bind value  with  value type
 - (BOOL)dbSaveWithKey:(NSString *)key value:(NSData *)value fileName:(NSString *)fileName extentionData:(NSData *)exData {
     NSString *sql = @"insert or replace into KVStore (key, filename, size, inline_data, modification_time, last_access_time, extended_data) values (?1, ?2, ?3, ?4, ?5, ?6, ?7);";
@@ -260,7 +279,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
         return NO;
     }
     int timestamp = (int)time(NULL);
-    NSString *sql = [NSString stringWithFormat:@"update KVStore set last_access_time = %d where key in (%@);", timestamp, [keys componentsJoinedByString:@","]];
+    NSString *sql = [NSString stringWithFormat:@"update KVStore set last_access_time = %d where key in (%@);", timestamp, [self dbJoinedKeys:keys]];
     
     sqlite3_stmt *stmt = NULL;
     int result = sqlite3_prepare_v2(_db, sql.UTF8String, -1, &stmt, NULL);
@@ -270,6 +289,8 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
         }
         return NO;
     }
+    
+    [self dbBindJoinedKeys:keys stmt:stmt fromIndex:1];
     
     result = sqlite3_step(stmt);
     sqlite3_finalize(stmt);
@@ -302,7 +323,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
     if (![self dbIsReady]) {
         return NO;
     }
-    NSString *sql =  [NSString stringWithFormat:@"delete from KVStore where key in (%@);", [keys componentsJoinedByString:@","]];
+    NSString *sql =  [NSString stringWithFormat:@"delete from KVStore where key in (%@);", [self dbJoinedKeys:keys]];
     sqlite3_stmt *stmt = NULL;
     int result = sqlite3_prepare_v2(_db, sql.UTF8String, -1, &stmt, NULL);
     if (result != SQLITE_OK) {
@@ -312,6 +333,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
         return NO;
     }
     
+    [self dbBindJoinedKeys:keys stmt:stmt fromIndex:1];
     result = sqlite3_step(stmt);
     sqlite3_finalize(stmt);
     if (result == SQLITE_ERROR) {
@@ -419,9 +441,9 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
     //分开创建sql语句，并且指定所查找的字段，目的是为了提高查找效率
     NSString *sql;
     if (excludeInlineData) {
-        sql = [NSString stringWithFormat:@"select key, filename, size, modification_time, last_access_time, extended_data from KVStore where key in (%@);", [keys componentsJoinedByString:@","]];
+        sql = [NSString stringWithFormat:@"select key, filename, size, modification_time, last_access_time, extended_data from KVStore where key in (%@);", [self dbJoinedKeys:keys]];
     } else {
-        sql = [NSString stringWithFormat:@"select key, filename, size, inline_data, modification_time, last_access_time, extended_data from KVStore where key in (%@)", [keys componentsJoinedByString:@","]];
+        sql = [NSString stringWithFormat:@"select key, filename, size, inline_data, modification_time, last_access_time, extended_data from KVStore where key in (%@)", [self dbJoinedKeys:keys]];
     }
     
     sqlite3_stmt *stmt = NULL;
@@ -433,6 +455,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
         return nil;
     }
     
+    [self dbBindJoinedKeys:keys stmt:stmt fromIndex:1];
     NSMutableArray *items = [NSMutableArray new];
     do {
         result = sqlite3_step(stmt);
@@ -504,7 +527,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
 
 - (NSMutableArray *)getFilenameWithKeys:(NSArray *)keys {
     if (![self dbIsReady]) return nil;
-    NSString *sql = [NSString stringWithFormat:@"select filename from KVStore where key in (%@);", [keys componentsJoinedByString:@","]];
+    NSString *sql = [NSString stringWithFormat:@"select filename from KVStore where key in (%@);", [self dbJoinedKeys:keys]];
     sqlite3_stmt *stmt = NULL;
     int result = sqlite3_prepare_v2(_db, sql.UTF8String, -1, &stmt, NULL);
     if (result != SQLITE_OK) {
@@ -512,6 +535,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
         return nil;
     }
     
+    [self dbBindJoinedKeys:keys stmt:stmt fromIndex:1];
     NSMutableArray *filenames = [NSMutableArray new];
     do {
         result = sqlite3_step(stmt);
@@ -665,7 +689,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
 
 - (NSData *)fileReadWithName:(NSString *)fileName {
     if (_invalidated) {
-        return NO;
+        return nil;
     }
     NSString *path = [_dataPath stringByAppendingPathComponent:fileName];
     return [NSData dataWithContentsOfFile:path];
@@ -878,7 +902,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
     }
 }
 
-- (BOOL)removeItemsWhenLargerThanSize:(NSUInteger)size{
+- (BOOL)removeItemsWhenLargerThanSize:(int)size{
     if (size == INT_MAX) {
         return YES;
     }
@@ -905,7 +929,7 @@ static NSString *const kTrashDirectoryName = @"KVStoreTrash"; //被淘汰的数�
     }
 }
 
-- (BOOL)removeItemsWhenEarlierThanTime:(NSUInteger)time{
+- (BOOL)removeItemsWhenEarlierThanTime:(int)time{
     if (time <= 0) return YES;
     if (time == INT_MAX) return [self removeAllItems];
     

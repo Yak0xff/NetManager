@@ -12,7 +12,6 @@
       <sourceFolder url="file://$MODULE_DIR$/NetManager/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/NetManager/json.json" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/EvoRuntime.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/EvoRuntime.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/Evo/NSObject+Evo.h" isTestSource="false" />
@@ -27,12 +26,14 @@
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyUpload.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/ApiKit/EasyUtil.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/CommonRequest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/HUD.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/Images/error@2x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/Images/error@3x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/Images/success@2x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/Images/success@3x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/MessageTool.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/MessageTool/MessageTool.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDB.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabase.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabase.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabaseAdditions.h" isTestSource="false" />
@@ -41,17 +42,16 @@
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabasePool.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabaseQueue.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDatabaseQueue.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMDB.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMResultSet.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/FMDB/FMResultSet.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/YTKKeyValueStore.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/MagicKit/NetManager/YTKKeyValueStore/YTKKeyValueStore.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/NetManager/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/NetManager-Bridging-Header.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/UserModel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/UserModel.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NetManager/ViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NetManager/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />
@@ -67,20 +67,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Stream.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Upload.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Validation.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/MBProgressHUD/MBProgressHUD.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/MBProgressHUD/MBProgressHUD.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/MBProgressHUD.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/MBProgressHUD.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-NetManager/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-NetManager/Pods-NetManager-acknowledgements.markdown" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-NetManager/Pods-NetManager-acknowledgements.plist" isTestSource="false" />
