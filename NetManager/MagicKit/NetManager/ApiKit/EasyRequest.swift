@@ -1,7 +1,6 @@
 import Foundation
 import Alamofire
 import UIKit
-import MBProgressHUD
 
 class EasyRequest {
     let builder: EasyBuilder

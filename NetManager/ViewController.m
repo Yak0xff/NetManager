@@ -41,10 +41,7 @@
     
     [self.store saveItemWithKey:user.userId value:[user toJSONData]];
             
-    
-    end = CACurrentMediaTime();
-    time = end - begin;
-    printf("finished:   %8.2f\n", time * 1000);
+     
     
 }
 

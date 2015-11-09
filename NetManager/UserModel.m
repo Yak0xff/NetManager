@@ -36,16 +36,7 @@
         if (statusCode != 200) {
             failure(nil);
         }else{
-            
-            
-            NSString *Json_path=[[NSBundle mainBundle] pathForResource:@"json" ofType:@"json"];
-            NSData *data=[NSData dataWithContentsOfFile:Json_path];
-            
-            id JsonObject=[NSJSONSerialization JSONObjectWithData:data
-                                                          options:NSJSONReadingAllowFragments
-                                                            error:nil];
-            
-            UserModel *user = [UserModel modelFromJSON:JsonObject];
+            UserModel *user = [UserModel modelFromJSON:responseObject];
             success(user,nil);
         }
     }];

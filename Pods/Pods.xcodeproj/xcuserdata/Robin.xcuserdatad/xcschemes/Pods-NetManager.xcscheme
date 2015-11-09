@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "564DF54CCC570A1619A5FAB59AA17C7B"
-               BlueprintName = "Pods-NetManager"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods_NetManager.framework">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = 'D5B3A64A328E91789AA5178E'
+               BlueprintName = 'Pods-NetManager'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'Pods_NetManager.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
